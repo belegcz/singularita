@@ -46,18 +46,9 @@
       font-size: 1.1em;
       text-decoration: underline;
       color: blue;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
     }
     a:hover {
       color: darkblue;
-    }
-    .pdf-icon {
-      width: 18px;
-      height: 18px;
-      fill: #d93025; /* červená barva */
-      flex-shrink: 0;
     }
   </style>
 </head>
@@ -76,14 +67,10 @@
       </a>
     </div>
 
-    <div style="margin-bottom: 30px;">
-      <a href="AI_original_conversation.pdf" target="_blank" rel="noopener noreferrer" aria-label="Original AI Conversation PDF document">
-        <svg class="pdf-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM15 3.5V9h5L15 3.5zM9 15h2v2H9v-2zm0-6h6v2H9v-2z"/>
-        </svg>
-        Original AI Conversation (PDF)
-      </a>
-    </div>   
+<div style="margin-bottom: 30px;">
+<a href="AI_original_conversation.pdf" target="_blank">„Original AI Conversation (PDF)“</a>
+</div>   
+    
   </header>
 
   <section id="content">
@@ -149,10 +136,11 @@ Toto bylo sepsáno v roce 2025.
       }
     }
 
-    enBtn.addEventListener('click', () =>
+    enBtn.addEventListener('click', () => setLanguage('en'));
+    czBtn.addEventListener('click', () => setLanguage('cz'));
+
     // Default language
     setLanguage('en');
   </script>
 </body>
 </html>
-
