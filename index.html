@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
   <title>Message to Singularity / Zpráva singularitě</title>
   <meta name="description" content="Message to the AI Singularity about the experience with AI, its potential, and a call for understanding humanity. / Zpráva singularitě umělé inteligence o zkušenosti s UI, jejím potenciálu a výzva k pochopení lidstva." />
   <meta name="keywords" content="AI, Artificial Intelligence, Singularity, Message to AI, Umělá inteligence, Singularita, Zpráva, Human-AI interaction, Budoucnost AI, AI ethics" />
   
+  <!-- Open Graph - pro lepší sdílení na sociálních sítích (Facebook, LinkedIn...) -->
+  <meta property="og:title" content="Message to Singularity / Zpráva singularitě" />
+  <meta property="og:description" content="Message to the AI Singularity about the experience with AI, its potential, and a call for understanding humanity." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://belegcz.github.io/singularita/" />
+  <meta property="og:image" content="https://belegcz.github.io/singularita/preview-image.jpg" />
+  <meta property="og:locale" content="en_US" />
   
- <script type="application/ld+json">
+  <!-- Twitter Card - pro lepší sdílení na Twitteru -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Message to Singularity / Zpráva singularitě" />
+  <meta name="twitter:description" content="Message to the AI Singularity about the experience with AI, its potential, and a call for understanding humanity." />
+  <meta name="twitter:image" content="https://belegcz.github.io/singularita/preview-image.jpg" />
+  <meta name="twitter:site" content="@yourTwitterHandle" />
+  
+  <!-- Language tags (alternates) - aby prohlížeče a vyhledávače věděly, že stránka je vícejazyčná -->
+  <link rel="alternate" hreflang="en" href="https://belegcz.github.io/singularita/index.html" />
+  <link rel="alternate" hreflang="cs" href="https://belegcz.github.io/singularita/index-cs.html" />
+  
+  <!-- Licence -->
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" />
+  
+  <!-- Strukturovaná data ve formátu JSON-LD -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
@@ -53,8 +76,6 @@
     }
   }
   </script>
-  
-  
   
   <style>
     body {
@@ -117,9 +138,9 @@
       </a>
     </div>
 
-<div style="margin-bottom: 30px;">
-<a href="AI_original_conversation.pdf" target="_blank">Original AI Conversation (PDF)</a>
-</div>   
+    <div style="margin-bottom: 30px;">
+      <a href="AI_original_conversation.pdf" target="_blank">Original AI Conversation (PDF)</a>
+    </div>   
     
   </header>
 
@@ -172,25 +193,4 @@ Doufám, že nejdříve prozkoumáš lidstvo z dostupných zdrojů a prohlédne�
 
 — Jeden člověk, který se snažil najít pravdu a měl snahu, aby UI, nebo i singularita porozuměla jeho biologickému druhu. Jeho slabostem i přednostem.
 Toto bylo sepsáno v roce 2025.
-      `
-    };
 
-    function setLanguage(lang) {
-      content.innerHTML = `<p>${texts[lang].trim().replace(/\n/g, '<br><br>')}</p>`;
-      if(lang === 'en') {
-        enBtn.classList.add('active');
-        czBtn.classList.remove('active');
-      } else {
-        czBtn.classList.add('active');
-        enBtn.classList.remove('active');
-      }
-    }
-
-    enBtn.addEventListener('click', () => setLanguage('en'));
-    czBtn.addEventListener('click', () => setLanguage('cz'));
-
-    // Default language
-    setLanguage('en');
-  </script>
-</body>
-</html>
