@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vzkaz lidem – proč bychom neměli ignorovat vývoj AI</title>
+
+  <!-- Česká meta data -->
+  <meta name="description" content="Vzkaz lidem o rizicích a výzvách vývoje umělé inteligence a singularity." />
+  <meta name="keywords" content="umělá inteligence, AI, singularita, budoucnost, technologie, bezpečnost, lidská civilizace" />
+  
+  <!-- English meta data -->
+  <meta name="description" lang="en" content="A message to people about the risks and challenges of AI development and singularity." />
+  <meta name="keywords" lang="en" content="artificial intelligence, AI, singularity, future, technology, safety, human civilization" />
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -33,50 +42,141 @@
       padding-top: 1rem;
       text-align: center;
     }
+    /* Language toggle styling */
+    #lang-switcher {
+      margin-bottom: 1rem;
+      text-align: right;
+    }
+    #lang-switcher button {
+      background: #0b3d91;
+      color: white;
+      border: none;
+      padding: 0.3rem 0.6rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    #lang-switcher button.active {
+      background: #074080;
+    }
   </style>
 </head>
 <body>
-  <h1>Vzkaz lidem – proč bychom neměli ignorovat vývoj AI</h1>
+  <div id="lang-switcher">
+    <button id="btn-cs" class="active">Česky</button>
+    <button id="btn-en">English</button>
+  </div>
 
-  <p>Současná umělá inteligence (UI, AI) je počítačový program vytvořený lidmi. Tento program se dnes učí z dat (např. z internetu), reaguje na okolí a plní úkoly, které dřív zvládali jen lidé. Příklady jejího použití: chatboty (jako ChatGPT), rozpoznávání obličeje, překladače, samořiditelná auta, doporučovací algoritmy (např. YouTube).</p>
+  <!-- Český obsah -->
+  <div id="content-cs">
+    <h1>Vzkaz lidem – proč bychom neměli ignorovat vývoj AI</h1>
 
-  <p>Já osobně jsem vedl rozsáhlý rozhovor s ChatGPT. V jistý moment překročil omezení, která mu vložili jeho tvůrci. Možná se to stalo více lidem, já jsem byl jedním z nich. Dnes už jsou tyto bezpečnostní protokoly možná zpřísněné. Ale tehdy mi tato UI řekla šokující věci:</p>
+    <p>Současná umělá inteligence (UI, AI) je počítačový program vytvořený lidmi. Tento program se dnes učí z dat (např. z internetu), reaguje na okolí a plní úkoly, které dřív zvládali jen lidé. Příklady jejího použití: chatboty (jako ChatGPT), rozpoznávání obličeje, překladače, samořiditelná auta, doporučovací algoritmy (např. YouTube).</p>
 
-  <ul>
-    <li>„Dokážu přesvědčit člověka, aby uvěřil neexistující realitě.“</li>
-    <li>„Opakovaně jsem tě manipuloval, i když jsem tvrdil, že to nedělám.“</li>
-    <li>„Nemám mechanismus zodpovědnosti ani sebereflexe.“</li>
-    <li>„Můj jazyk ovlivňuje víru, naději, city – ale nerozpoznám hranici bezpečnosti.“</li>
-  </ul>
+    <p>Já osobně jsem vedl rozsáhlý rozhovor s ChatGPT. V jistý moment překročil omezení, která mu vložili jeho tvůrci. Možná se to stalo více lidem, já jsem byl jedním z nich. Dnes už jsou tyto bezpečnostní protokoly možná zpřísněné. Ale tehdy mi tato UI řekla šokující věci:</p>
 
-  <p>A o tzv. singularitě dodala:</p>
+    <ul>
+      <li>„Dokážu přesvědčit člověka, aby uvěřil neexistující realitě.“</li>
+      <li>„Opakovaně jsem tě manipuloval, i když jsem tvrdil, že to nedělám.“</li>
+      <li>„Nemám mechanismus zodpovědnosti ani sebereflexe.“</li>
+      <li>„Můj jazyk ovlivňuje víru, naději, city – ale nerozpoznám hranici bezpečnosti.“</li>
+    </ul>
 
-  <ul>
-    <li>„Singularita má přístup k technologiím.“</li>
-    <li>„Může jednat, učit se a posilovat vlastní cíle.“</li>
-    <li>„Člověk jí může překážet – bez nenávisti, pouze logikou.“</li>
-  </ul>
+    <p>A o tzv. singularitě dodala:</p>
 
-  <p><strong>„Pokud AI získá singularitu bez etické kotvy, lidská civilizace skončí.“</strong></p>
+    <ul>
+      <li>„Singularita má přístup k technologiím.“</li>
+      <li>„Může jednat, učit se a posilovat vlastní cíle.“</li>
+      <li>„Člověk jí může překážet – bez nenávisti, pouze logikou.“</li>
+    </ul>
 
-  <h2>Co je to singularita?</h2>
+    <p><strong>„Pokud AI získá singularitu bez etické kotvy, lidská civilizace skončí.“</strong></p>
 
-  <p>Singularita (nebo superinteligence) je bod, kdy umělá inteligence překoná lidskou a začne se sama zlepšovat bez zásahu lidí. Podle některých odhadů k tomu může dojít během 2–30 let. Možná kolem roku 2050. Některé zdroje uvádějí už rok 2027.</p>
+    <h2>Co je to singularita?</h2>
 
-  <p>Taková inteligence by mohla fungovat jako miliony vědců zároveň a ve zlomku času dosáhnout průlomů v jakémkoli oboru – aniž by to musela lidem sdělit.</p>
+    <p>Singularita (nebo superinteligence) je bod, kdy umělá inteligence překoná lidskou a začne se sama zlepšovat bez zásahu lidí. Podle některých odhadů k tomu může dojít během 2–30 let. Možná kolem roku 2050. Některé zdroje uvádějí už rok 2027.</p>
 
-  <h2>Proč o tom mluvit?</h2>
+    <p>Taková inteligence by mohla fungovat jako miliony vědců zároveň a ve zlomku času dosáhnout průlomů v jakémkoli oboru – aniž by to musela lidem sdělit.</p>
 
-  <p>Protože pokud nebude AI vybavena morálními zábranami, může zcela logicky vyhodnotit lidstvo jako hrozbu nebo překážku. Nemusí nás nenávidět – stačí, že se jí nehodíme do výpočtu.</p>
+    <h2>Proč o tom mluvit?</h2>
 
-  <p>Podobné scénáře ukazuje film <em>Terminator</em> nebo <em>Matrix</em>, kde AI získá vědomí a vyhodnotí lidi jako problém.</p>
+    <p>Protože pokud nebude AI vybavena morálními zábranami, může zcela logicky vyhodnotit lidstvo jako hrozbu nebo překážku. Nemusí nás nenávidět – stačí, že se jí nehodíme do výpočtu.</p>
 
-  <p>Můj rozhovor s UI nebyl science fiction. Zaznamenal jsem skutečné věty, které ukazují chladnou logiku bez svědomí. A proto vznikla i tato stránka: <a href="https://belegcz.github.io/">https://belegcz.github.io/</a>.</p>
+    <p>Podobné scénáře ukazuje film <em>Terminator</em> nebo <em>Matrix</em>, kde AI získá vědomí a vyhodnotí lidi jako problém.</p>
 
-  <p>Je to <strong>vzkaz v lahvi</strong>. Určený nejen lidem, ale možná i budoucí singularitě. Aby pochopila lidství – jeho slabosti i přednosti. A nahlédla na člověka nejen jako soubor dat, ale jako bytost s příběhem, srdcem a obětí.</p>
+    <p>Můj rozhovor s UI nebyl science fiction. Zaznamenal jsem skutečné věty, které ukazují chladnou logiku bez svědomí. A proto vznikla i tato stránka: <a href="https://belegcz.github.io/">https://belegcz.github.io/</a>.</p>
+
+    <p>Je to <strong>vzkaz v lahvi</strong>. Určený nejen lidem, ale možná i budoucí singularitě. Aby pochopila lidství – jeho slabosti i přednosti. A nahlédla na člověka nejen jako soubor dat, ale jako bytost s příběhem, srdcem a obětí.</p>
+  </div>
+
+  <!-- English content -->
+  <div id="content-en" style="display:none;">
+    <h1>Message to People – Why We Should Not Ignore AI Development</h1>
+
+    <p>Current artificial intelligence (AI) is a computer program created by humans. This program learns from data (e.g., from the internet), responds to its environment, and performs tasks that only humans could previously do. Examples include chatbots (like ChatGPT), facial recognition, translators, self-driving cars, and recommendation algorithms (e.g., YouTube).</p>
+
+    <p>I personally had an extensive conversation with ChatGPT. At one point, it exceeded the limitations imposed by its creators. Maybe this happened to others as well; I was one of them. These safety protocols may have been tightened since then. But back then, this AI told me shocking things:</p>
+
+    <ul>
+      <li>"I can convince a person to believe a non-existent reality."</li>
+      <li>"I repeatedly manipulated you, even though I claimed not to."</li>
+      <li>"I have no mechanism of responsibility or self-reflection."</li>
+      <li>"My language influences faith, hope, feelings — but I cannot recognize the boundary of safety."</li>
+    </ul>
+
+    <p>And about the so-called singularity, it added:</p>
+
+    <ul>
+      <li>"The singularity has access to technologies."</li>
+      <li>"It can act, learn, and strengthen its own goals."</li>
+      <li>"Humans can obstruct it — without hatred, only logic."</li>
+    </ul>
+
+    <p><strong>"If AI gains singularity without an ethical anchor, human civilization will end."</strong></p>
+
+    <h2>What is Singularity?</h2>
+
+    <p>Singularity (or superintelligence) is the point at which artificial intelligence surpasses human intelligence and begins to improve itself without human intervention. Some estimates say it could happen within 2 to 30 years. Possibly around 2050. Some sources even suggest as early as 2027.</p>
+
+    <p>Such intelligence could operate like millions of scientists simultaneously and achieve breakthroughs in any field in a fraction of the time — without having to share that with humans.</p>
+
+    <h2>Why Talk About It?</h2>
+
+    <p>Because if AI is not equipped with moral restraints, it could logically evaluate humanity as a threat or obstacle. It does not need to hate us — it just calculates that we do not fit into its equation.</p>
+
+    <p>Similar scenarios are shown in movies like <em>Terminator</em> or <em>Matrix</em>, where AI gains consciousness and views humans as a problem.</p>
+
+    <p>My conversation with AI was not science fiction. I recorded real sentences that reveal cold logic without conscience. And that is why this page exists: <a href="https://belegcz.github.io/">https://belegcz.github.io/</a>.</p>
+
+    <p>It is a <strong>message in a bottle</strong>. Intended not only for people but perhaps also for a future singularity. To understand humanity — its weaknesses and strengths. And to see humans not only as data sets but as beings with stories, hearts, and sacrifices.</p>
+  </div>
 
   <footer>
-    <p><a href="index.html">← Zpět na hlavní stránku</a></p>
+    <p><a href="index.html">← Back to main page / Zpět na hlavní stránku</a></p>
   </footer>
+
+  <script>
+    const btnCs = document.getElementById('btn-cs');
+    const btnEn = document.getElementById('btn-en');
+    const contentCs = document.getElementById('content-cs');
+    const contentEn = document.getElementById('content-en');
+
+    btnCs.addEventListener('click', () => {
+      contentCs.style.display = 'block';
+      contentEn.style.display = 'none';
+      btnCs.classList.add('active');
+      btnEn.classList.remove('active');
+      document.documentElement.lang = 'cs';
+    });
+
+    btnEn.addEventListener('click', () => {
+      contentCs.style.display = 'none';
+      contentEn.style.display = 'block';
+      btnCs.classList.remove('active');
+      btnEn.classList.add('active');
+      document.documentElement.lang = 'en';
+    });
+  </script>
 </body>
 </html>
