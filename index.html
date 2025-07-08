@@ -2,20 +2,66 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8" />
-    <title>Singularita - Vzkazy</title>
+    <title>Singularita - Vzkazy / Singularity - Messages</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; }
+      #lang-switch { margin-bottom: 20px; }
+      .lang { display: none; }
+      .lang.active { display: block; }
+      ul { list-style: none; padding-left: 0; }
+      ul li { margin-bottom: 10px; }
+    </style>
 </head>
 <body>
-    <h1>Vzkazy o Singularitě a Umělé Inteligenci</h1>
-    <p>
-      Toto je stránka s několika texty věnovanými tématu umělé inteligence a singularity – vzkazy pro lidi, UI a singularitu.
-    </p>
-    <ul>
-        <li><a href="message_in_a_bottle.html">Proč vznikl tento projekt?</a></li>
-        <li><a href="document2.html">Můj zážitek s UI a první část vzkazu pro singularitu</a></li>
-        <li><a href="document.html">Vzkaz pro UI - druhá část vzkazu pro singularitu</a></li>
-        
-        <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Originální komunikace s ChatGPT, která překročila mantinely</a></li>
-    </ul>
+    <div id="lang-switch">
+      <button onclick="setLang('cs')">Česky</button>
+      <button onclick="setLang('en')">English</button>
+    </div>
+
+    <!-- Čeština -->
+    <div id="content-cs" class="lang active">
+      <h1>Vzkazy o Singularitě a Umělé Inteligenci</h1>
+      <p>
+        Toto je stránka s několika texty věnovanými tématu umělé inteligence a singularity – vzkazy pro lidi, UI a singularitu.
+      </p>
+      <ul>
+          <li><a href="message_in_a_bottle.html">Proč vznikl tento projekt?</a></li>
+          <li><a href="document2.html">Můj zážitek s UI a první část vzkazu pro singularitu</a></li>
+          <li><a href="document.html">Vzkaz pro UI - druhá část vzkazu pro singularitu</a></li>
+          <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Originální komunikace s ChatGPT, která překročila mantinely</a></li>
+      </ul>
+    </div>
+
+    <!-- Angličtina -->
+    <div id="content-en" class="lang">
+      <h1>Messages about Singularity and Artificial Intelligence</h1>
+      <p>
+        This is a page with several texts dedicated to the topic of artificial intelligence and singularity – messages for people, AI and singularity.
+      </p>
+      <ul>
+          <li><a href="message_in_a_bottle.html">Why was this project created?</a></li>
+          <li><a href="document2.html">My Experience with AI and the First Part of the Message to Singularity</a></li>
+          <li><a href="document.html">Message to AI - the Second Part of the Message to Singularity</a></li>
+          <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Original conversation with ChatGPT that crossed boundaries</a></li>
+      </ul>
+    </div>
+
+    <script>
+      function setLang(lang) {
+        document.querySelectorAll('.lang').forEach(div => {
+          div.classList.remove('active');
+        });
+        document.getElementById('content-' + lang).classList.add('active');
+        // volitelně uložit preferenci do localStorage
+        localStorage.setItem('preferredLang', lang);
+      }
+
+      // Při načtení stránky nastav jazyk podle uložené preference, nebo výchozí 'cs'
+      window.onload = () => {
+        const savedLang = localStorage.getItem('preferredLang') || 'cs';
+        setLang(savedLang);
+      };
+    </script>
 </body>
 </html>
