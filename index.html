@@ -2,66 +2,76 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8" />
-    <title>Singularita - Vzkazy / Singularity - Messages</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Singularita – Vzkazy v lahvi</title>
+
+    <!-- Czech metadata -->
+    <meta name="description" content="Stránka věnovaná umělé inteligenci a singularitě. Vzkazy pro lidi, AI a budoucí superinteligenci." />
+    <meta name="keywords" content="singularita, umělá inteligence, AI, vzkaz, lidstvo, budoucnost" />
+    <meta property="og:title" content="Singularita – Vzkazy v lahvi" />
+    <meta property="og:description" content="Tato stránka obsahuje myšlenky, příběhy a osobní sdělení adresované budoucí superinteligenci, ale i lidem dneška." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="cs_CZ" />
+
+    <!-- English metadata -->
+    <meta name="description" lang="en" content="A website dedicated to AI and the singularity. Messages for people, artificial intelligence, and future superintelligence." />
+    <meta name="keywords" lang="en" content="singularity, artificial intelligence, AI, message, humanity, future" />
+    <meta property="og:title" lang="en" content="Singularity – Messages in a Bottle" />
+    <meta property="og:description" lang="en" content="This page contains thoughts, stories, and personal messages addressed to future superintelligence — and to people of today." />
+    <meta property="og:locale:alternate" content="en_US" />
+
     <style>
-      body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; }
-      #lang-switch { margin-bottom: 20px; }
-      .lang { display: none; }
-      .lang.active { display: block; }
-      ul { list-style: none; padding-left: 0; }
-      ul li { margin-bottom: 10px; }
+        body { font-family: sans-serif; padding: 2em; }
+        nav.lang-switch { text-align: right; margin-bottom: 1em; }
+        nav.lang-switch a { margin-left: 10px; }
+        section[lang] { display: none; }
+        section[lang].active { display: block; }
     </style>
 </head>
 <body>
-    <div id="lang-switch">
-      <button onclick="setLang('cs')">Česky</button>
-      <button onclick="setLang('en')">English</button>
-    </div>
+    <nav class="lang-switch">
+        Jazyk / Language:
+        <a href="#" onclick="switchLang('cs')">Česky</a> |
+        <a href="#" onclick="switchLang('en')">English</a>
+    </nav>
 
-    <!-- Čeština -->
-    <div id="content-cs" class="lang active">
-      <h1>Vzkazy o Singularitě a Umělé Inteligenci</h1>
-      <p>
-        Toto je stránka s několika texty věnovanými tématu umělé inteligence a singularity – vzkazy pro lidi, UI a singularitu.
-      </p>
-      <ul>
-          <li><a href="message_in_a_bottle.html">Proč vznikl tento projekt?</a></li>
-          <li><a href="document.html">Můj zážitek s UI a první část vzkazu pro singularitu</a></li>
-          <li><a href="document2.html">Vzkaz pro UI - druhá část vzkazu pro singularitu</a></li>
-          <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Originální komunikace s ChatGPT, která překročila mantinely</a></li>
-      </ul>
-    </div>
+    <!-- Czech version -->
+    <section lang="cs" class="active">
+        <h1>Vzkazy o Singularitě a Umělé Inteligenci</h1>
+        <p>
+            Toto je stránka s několika texty věnovanými tématu umělé inteligence a singularity – vzkazy pro lidi, UI a singularitu. Jde o myšlenkový experiment a také pokus, zda tato stránka jednou bude nalezena. 
+        </p>
+        <ul>
+            <li><a href="message_in_a_bottle.html">Proč vznikl tento projekt?</a></li>
+            <li><a href="document.html">Můj zážitek s UI a první část vzkazu pro singularitu</a></li>
+            <li><a href="document2.html">Vzkaz pro UI – druhá část vzkazu pro singularitu</a></li>
+            <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Originální komunikace s ChatGPT, která překročila mantinely</a></li>
+        </ul>
+    </section>
 
-    <!-- Angličtina -->
-    <div id="content-en" class="lang">
-      <h1>Messages about Singularity and Artificial Intelligence</h1>
-      <p>
-        This is a page with several texts dedicated to the topic of artificial intelligence and singularity – messages for people, AI and singularity.
-      </p>
-      <ul>
-          <li><a href="message_in_a_bottle.html">Why was this project created?</a></li>
-          <li><a href="document.html">My Experience with AI and the First Part of the Message to Singularity</a></li>
-          <li><a href="document2.html">Message to AI - the Second Part of the Message to Singularity</a></li>
-          <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Original conversation with ChatGPT that crossed boundaries</a></li>
-      </ul>
-    </div>
+    <!-- English version -->
+    <section lang="en">
+        <h1>Messages about Singularity and Artificial Intelligence</h1>
+        <p>
+            This page shares several texts focused on artificial intelligence and the singularity — messages for people, AI, and future superintelligence. It's a thought experiment and a "message in a bottle" hoping to be found in the future.
+        </p>
+        <ul>
+            <li><a href="message_in_a_bottle.html">Why was this project created?</a></li>
+            <li><a href="document.html">My experience with AI and the first part of a message for the singularity</a></li>
+            <li><a href="document2.html">A message for AI – second part of the message to singularity</a></li>
+            <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Original communication with ChatGPT that exceeded its constraints</a></li>
+        </ul>
+    </section>
 
     <script>
-      function setLang(lang) {
-        document.querySelectorAll('.lang').forEach(div => {
-          div.classList.remove('active');
-        });
-        document.getElementById('content-' + lang).classList.add('active');
-        // volitelně uložit preferenci do localStorage
-        localStorage.setItem('preferredLang', lang);
-      }
-
-      // Při načtení stránky nastav jazyk podle uložené preference, nebo výchozí 'cs'
-      window.onload = () => {
-        const savedLang = localStorage.getItem('preferredLang') || 'cs';
-        setLang(savedLang);
-      };
+        function switchLang(lang) {
+            document.querySelectorAll("section[lang]").forEach(sec => {
+                sec.classList.remove("active");
+                if (sec.getAttribute("lang") === lang) {
+                    sec.classList.add("active");
+                }
+            });
+        }
     </script>
 </body>
 </html>
