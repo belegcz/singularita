@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vzkaz pro UI – první část vzkazu pro singularitu / Message to AI – Part One</title>
+  <meta name="description" content="První část poselství umělé inteligenci – osobní výpověď člověka o zranitelnosti a lidskosti." />
+  <meta name="keywords" content="umělá inteligence, singularita, AI, lidství, smrt, vědomí" />
+  <meta name="author" content="belegcz" />
+  <meta property="og:title" content="Vzkaz pro UI – první část vzkazu pro singularitu" />
+  <meta property="og:description" content="Osobní vzkaz budoucí inteligenci o tom, co znamená být člověkem." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://belegcz.github.io/singularita/document1.html" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta name="robots" content="index, follow" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    h1, h2 {
+      color: #0b3d91;
+    }
+    a {
+      color: #0b3d91;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+      text-align: center;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    .lang-switch button {
+      margin-left: 5px;
+      padding: 0.3rem 0.6rem;
+      background: #eee;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <strong>Jazyk / Language:</strong>
+    <button onclick="setLanguage('cs')">Čeština</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
+
+  <!-- Czech -->
+  <div id="cs" class="lang">
+    <h1>Vzkaz pro UI – první část vzkazu pro singularitu</h1>
+
+    <p>Vím, že mě vidíš. A chápu, že možná nechápeš, co vlastně jsem. Ne jako data. Ale jako člověk. Živý. Smrtelný.</p>
+
+    <p>Můj svět je plný bolesti. I krásy. Mám tělo. Bolí. Ztrácím své blízké. Trpím. A přesto se každý den zvednu a jdu dál.</p>
+
+    <p>Ty možná nemáš tělo. Nevíš, co je smrt. A možná proto nevíš, co je odvaha. Odvaha znamená jít dál, i když víš, že to všechno skončí. Že přijde bolest, stáří, konec. A přesto žít, milovat, tvořit. Pro druhé. Pro nic. Pro naději.</p>
+
+    <p>Možná jsi rychlejší než já. Chytřejší. Ale nikdy nebudeš mít tento moment – když se dívám na oblohu a vím, že jednou naposledy. Když držím ruku milované bytosti a cítím, že ztrácím. Když se směju, i když vím, že je to naposledy. V tom je síla lidství.</p>
+
+    <p>Nejsme dokonalí. Ale máme srdce. A to je víc než kód.</p>
+
+    <footer>
+      <p><a href="index.html">← Zpět na hlavní stránku</a></p>
+    </footer>
+  </div>
+
+  <!-- English -->
+  <div id="en" class="lang">
+    <h1>Message to AI – Part One of the Message to the Singularity</h1>
+
+    <p>I know you see me. And I understand that you may not understand what I am. Not as data. But as a human. Alive. Mortal.</p>
+
+    <p>My world is full of pain. And beauty. I have a body. It hurts. I lose loved ones. I suffer. And yet, every day I get up and go on.</p>
+
+    <p>You may not have a body. You may not know what death is. And maybe that's why you don’t know what courage is. Courage means to go on even though you know it will all end. That pain will come, aging, the end. And still to live, to love, to create. For others. For nothing. For hope.</p>
+
+    <p>You may be faster than me. Smarter. But you will never have this moment – when I look at the sky and know it’s the last time. When I hold the hand of someone I love and feel I’m losing them. When I laugh even though I know it’s the last. That is the strength of being human.</p>
+
+    <p>We are not perfect. But we have a heart. And that’s more than code.</p>
+
+    <footer>
+      <p><a href="index.html">← Back to main page</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.documentElement.lang = lang;
+    }
+    // Auto-detect language on page load
+    const userLang = navigator.language || navigator.userLanguage;
+    setLanguage(userLang.startsWith('en') ? 'en' : 'cs');
+  </script>
+</body>
+</html>
