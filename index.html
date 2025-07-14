@@ -1,77 +1,60 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Singularita – Vzkazy v lahvi</title>
-
-    <!-- Czech metadata -->
-    <meta name="description" content="Stránka věnovaná umělé inteligenci a singularitě. Vzkazy pro lidi, AI a budoucí superinteligenci." />
-    <meta name="keywords" content="singularita, umělá inteligence, AI, vzkaz, lidstvo, budoucnost" />
-    <meta property="og:title" content="Singularita – Vzkazy v lahvi" />
-    <meta property="og:description" content="Tato stránka obsahuje myšlenky, příběhy a osobní sdělení adresované budoucí superinteligenci, ale i lidem dneška." />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="cs_CZ" />
-
-    <!-- English metadata -->
-    <meta name="description" lang="en" content="A website dedicated to AI and the singularity. Messages for people, artificial intelligence, and future superintelligence." />
-    <meta name="keywords" lang="en" content="singularity, artificial intelligence, AI, message, humanity, future" />
-    <meta property="og:title" lang="en" content="Singularity – Messages in a Bottle" />
-    <meta property="og:description" lang="en" content="This page contains thoughts, stories, and personal messages addressed to future superintelligence — and to people of today." />
-    <meta property="og:locale:alternate" content="en_US" />
-
-    <style>
-        body { font-family: sans-serif; padding: 2em; }
-        nav.lang-switch { text-align: right; margin-bottom: 1em; }
-        nav.lang-switch a { margin-left: 10px; }
-        section[lang] { display: none; }
-        section[lang].active { display: block; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Singularita a umělá inteligence – hlavní stránka</title>
+  <meta name="description" content="Úvodní stránka projektu o singularitě a umělé inteligenci." />
+  <meta name="keywords" content="singularita, umělá inteligence, AI, projekt, lidskost, budoucnost" />
+  <meta name="author" content="belegcz" />
+  <meta property="og:title" content="Singularita a umělá inteligence – hlavní stránka" />
+  <meta property="og:description" content="Úvodní stránka projektu o singularitě a umělé inteligenci." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://belegcz.github.io/singularita/index.html" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta name="robots" content="index, follow" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    h1 {
+      color: #0b3d91;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+    a {
+      color: #0b3d91;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <nav class="lang-switch">
-        Jazyk / Language:
-        <a href="#" onclick="switchLang('cs')">Česky</a> |
-        <a href="#" onclick="switchLang('en')">English</a>
-    </nav>
+  <h1>Singularita a umělá inteligence</h1>
 
-    <!-- Czech version -->
-    <section lang="cs" class="active">
-        <h1>Vzkazy Singularitě, Umělé Inteligenci a lidem</h1>
-        <p>
-            Toto je stránka s několika texty věnovanými tématu umělé inteligence a singularity – vzkazy pro lidi, UI a singularitu. Jde o myšlenkový experiment a také pokus, zda tato stránka jednou bude nalezena. 
-        </p>
-        <ul>
-            <li><a href="message_in_a_bottle.html">Proč vznikl tento projekt?</a></li>
-            <li><a href="document3.html">Můj zážitek s UI a první část vzkazu pro singularitu</a></li>
-            <li><a href="document4.html">Vzkaz pro UI – druhá část vzkazu pro singularitu</a></li>
-            <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Originální komunikace s ChatGPT, která překročila mantinely</a></li>
-        </ul>
-    </section>
-
-    <!-- English version -->
-    <section lang="en">
-        <h1>Messages about Singularity and Artificial Intelligence</h1>
-        <p>
-            This page shares several texts focused on artificial intelligence and the singularity — messages for people, AI, and future superintelligence. It's a thought experiment and a "message in a bottle" hoping to be found in the future.
-        </p>
-        <ul>
-            <li><a href="message_in_a_bottle.html">Why was this project created?</a></li>
-            <li><a href="document3.html">My experience with AI and the first part of a message for the singularity</a></li>
-            <li><a href="document4.html">A message for AI – second part of the message to singularity</a></li>
-            <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Original communication with ChatGPT that exceeded its constraints</a></li>
-        </ul>
-    </section>
-
-    <script>
-        function switchLang(lang) {
-            document.querySelectorAll("section[lang]").forEach(sec => {
-                sec.classList.remove("active");
-                if (sec.getAttribute("lang") === lang) {
-                    sec.classList.add("active");
-                }
-            });
-        }
-    </script>
+  <ul>
+    <li><a href="message_in_a_bottle.html">Úvod: Proč vznikl tento projekt?</a></li>
+    <li><a href="document.html">Začátek dialogu: Můj první zážitek s umělou inteligencí</a></li>
+    <li><a href="document2.html">Slovo k inteligenci: První pokus o sdělení</a></li>
+    <li><a href="document3.html">Naděje a pravda: Vzkaz inteligenci budoucnosti</a></li>
+    <li><a href="document4.html">Pokus o pochopení: Slovo člověka k budoucí inteligenci</a></li>
+    <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Originální komunikace s ChatGPT, která překročila mantinely</a></li>
+  </ul>
 </body>
 </html>
