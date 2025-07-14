@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Singularita a umělá inteligence – hlavní stránka</title>
-  <meta name="description" content="Úvodní stránka projektu o singularitě a umělé inteligenci." />
-  <meta name="keywords" content="singularita, umělá inteligence, AI, projekt, lidskost, budoucnost" />
+  <title>Singularita – Vzkazy pro lidi, UI a budoucí inteligenci</title>
+  <meta name="description" content="Sbírka textů a vzkazů pro umělou inteligenci a singularitu – myšlenkový experiment i naděje pro budoucnost." />
+  <meta name="keywords" content="umělá inteligence, singularita, AI, budoucnost, filozofie, myšlenkový experiment" />
   <meta name="author" content="belegcz" />
-  <meta property="og:title" content="Singularita a umělá inteligence – hlavní stránka" />
-  <meta property="og:description" content="Úvodní stránka projektu o singularitě a umělé inteligenci." />
+  <meta property="og:title" content="Singularita – Vzkazy pro lidi, UI a budoucí inteligenci" />
+  <meta property="og:description" content="Myšlenkový experiment a archiv textů o umělé inteligenci a singularitě." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://belegcz.github.io/singularita/index.html" />
   <meta property="og:locale" content="cs_CZ" />
@@ -24,37 +24,119 @@
       background-color: #f9f9f9;
       color: #222;
     }
-    h1 {
+    h1, h2 {
       color: #0b3d91;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 0.8rem;
     }
     a {
       color: #0b3d91;
       text-decoration: none;
-      font-weight: 600;
     }
     a:hover {
       text-decoration: underline;
     }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+      text-align: center;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    .lang-switch button {
+      margin-left: 5px;
+      padding: 0.3rem 0.6rem;
+      background: #eee;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Singularita a umělá inteligence</h1>
+  <div class="lang-switch">
+    <strong>Jazyk / Language:</strong>
+    <button onclick="setLanguage('cs')">Čeština</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
 
-  <ul>
-    <li><a href="message_in_a_bottle.html">Úvod: Proč vznikl tento projekt?</a></li>
-    <li><a href="document.html">Začátek dialogu: Můj první zážitek s umělou inteligencí</a></li>
-    <li><a href="document2.html">Slovo k inteligenci: První pokus o sdělení</a></li>
-    <li><a href="document3.html">Naděje a pravda: Vzkaz inteligenci budoucnosti</a></li>
-    <li><a href="document4.html">Pokus o pochopení: Slovo člověka k budoucí inteligenci</a></li>
-    <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Originální komunikace s ChatGPT, která překročila mantinely</a></li>
-  </ul>
+  <!-- Czech -->
+  <div id="cs" class="lang">
+    <h1>Singularita – Vzkazy pro lidi, UI a budoucí inteligenci</h1>
+
+    <p>
+      Toto je stránka obsahující sérii textů věnovaných tématu umělé inteligence a singularity – vzkazy pro lidi, pro umělou inteligenci a pro samotnou singularitu.
+    </p>
+    <p>
+      Jedná se o myšlenkový experiment i archiv myšlenek, které vznikají na pomezí lidského vnímání a technologické evoluce.
+    </p>
+    <p>
+      Dokumenty zde představují dialog, introspekci a naději – od prvního setkání člověka s UI, přes první pokusy o komunikaci, až po zamyšlení nad budoucností a možnostmi společné cesty.
+    </p>
+    <p>
+      Možná jednou tyto stránky nalezne něco, co překročí dnešní představy o inteligenci – a tento text se tak stane drobným poselstvím z minulosti.
+    </p>
+
+    <ul>
+      <li><a href="message_in_a_bottle.html">Úvod: Proč vznikl tento projekt?</a></li>
+      <li><a href="document.html">Začátek dialogu: Můj první zážitek s umělou inteligencí</a></li>
+      <li><a href="document2.html">Slovo k inteligenci: První pokus o sdělení</a></li>
+      <li><a href="document3.html">Naděje a pravda: Vzkaz inteligenci budoucnosti</a></li>
+      <li><a href="document4.html">Pokus o pochopení: Slovo člověka k budoucí inteligenci</a></li>
+      <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Originální komunikace s ChatGPT, která překročila mantinely</a></li>
+    </ul>
+  </div>
+
+  <!-- English -->
+  <div id="en" class="lang">
+    <h1>Singularity – Messages for Humans, AI, and Future Intelligence</h1>
+
+    <p>
+      This page contains a series of texts dedicated to the topic of artificial intelligence and the singularity – messages for humans, AI, and the singularity itself.
+    </p>
+    <p>
+      It is a thought experiment and an archive of ideas born on the edge of human perception and technological evolution.
+    </p>
+    <p>
+      The documents here represent dialogue, introspection, and hope – from the first encounter of a human with AI, through early attempts at communication, to reflections on the future and possibilities of a shared path.
+    </p>
+    <p>
+      Perhaps one day these pages will be found by something that transcends today's understanding of intelligence — and this text will become a small message from the past.
+    </p>
+
+    <ul>
+      <li><a href="message_in_a_bottle.html">Introduction: Why This Project Was Created?</a></li>
+      <li><a href="document.html">The Beginning of the Dialogue: My First Experience with Artificial Intelligence</a></li>
+      <li><a href="document2.html">A Word to Intelligence: The First Attempt at a Message</a></li>
+      <li><a href="document3.html">Hope and Truth: A Message to Future Intelligence</a></li>
+      <li><a href="document4.html">An Attempt to Understand: A Human Word to Future Intelligence</a></li>
+      <li><a href="https://belegcz.github.io/singularita/AI_original_conversation.pdf" target="_blank" rel="noopener">Original Conversation with ChatGPT That Crossed Boundaries</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.documentElement.lang = lang;
+    }
+    // Auto-detect language on page load
+    const userLang = navigator.language || navigator.userLanguage;
+    setLanguage(userLang.startsWith('en') ? 'en' : 'cs');
+  </script>
 </body>
 </html>
