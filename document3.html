@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
 
 
@@ -79,7 +79,7 @@
     <button onclick="setLanguage('en')">English</button>
   </div>
 <!-- 🇨🇿 Česká verze -->
-  <div id="cs" class="lang active">
+  <div id="cs" class="lang">
     
 
 
@@ -151,7 +151,7 @@
   </div>
 
  <!-- English -->
-  <div id="en" class="lang">
+  <div id="en" class="lang active">
 
 
 <h1>Part 3 – Hope and Truth: A Message to the Intelligence of the Future</h1>
@@ -186,6 +186,7 @@
 
 </div>
 
+ 
   <script>
     function setLanguage(lang) {
       document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
@@ -196,8 +197,11 @@
     const userLang = navigator.language || navigator.userLanguage;
     setLanguage(userLang.startsWith('en') ? 'en' : 'cs');
   </script>
+
+    
 </body>
 </html>
+
 
 
 
