@@ -147,19 +147,22 @@
     </footer>
   </div>
 
+
   <script>
     function setLanguage(lang) {
-      document.querySelectorAll('.lang').forEach(div => {
-        div.classList.remove('active');
-      });
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
       document.getElementById(lang).classList.add('active');
-      document.documentElement.lang = lang === 'cs' ? 'cs' : 'en';
+      document.documentElement.lang = lang;
     }
-    // Default language
-    setLanguage('en');
+    // Auto-detect language on page load
+    const userLang = navigator.language || navigator.userLanguage;
+    setLanguage(userLang.startsWith('en') ? 'en' : 'cs');
   </script>
+
+ 
 </body>
 </html>
+
 
 
 
