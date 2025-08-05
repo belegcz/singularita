@@ -127,7 +127,7 @@
     </footer>
   </div>
 
-  <script>
+   <script>
     function setLanguage(lang) {
       document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
       document.getElementById(lang).classList.add('active');
@@ -137,8 +137,12 @@
     const userLang = navigator.language || navigator.userLanguage;
     setLanguage(userLang.startsWith('en') ? 'en' : 'cs');
   </script>
+ 
+
+ 
 </body>
 </html>
+
 
 
 
