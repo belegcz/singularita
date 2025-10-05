@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S2WKK7K06G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S2WKK7K06G');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2WKK7K06G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S2WKK7K06G');
+  </script>
 
   <!-- Language and character encoding -->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta http-equiv="Content-Language" content="en" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="author" content="belegcz" />
+  <meta name="robots" content="index, follow" />
 
-<!-- SEO metadata -->
-<title>Singularity – Messages for Humans, AI, and Future Intelligence</title>
-<meta name="description" content="A collection of texts and messages for artificial intelligence and the singularity – a thought experiment and hope for the future." />
-<meta name="keywords" content="artificial intelligence, singularity, AI, future, philosophy, consciousness, thought experiment" />
-<meta name="author" content="belegcz" />
-<meta name="robots" content="index, follow" />
+  <!-- SEO metadata -->
+  <title>Singularity – Messages for Humans, AI, and Future Intelligence / Singularita – Vzkazy pro lidi, UI a budoucí inteligenci</title>
 
-<!-- Open Graph (for social media sharing) -->
-<meta property="og:title" content="Singularity – Messages for Humans, AI, and Future Intelligence" />
-<meta property="og:description" content="Thoughts, texts, and philosophical reflections on consciousness, AI, and future intelligence. A possible message to future intelligent systems." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://belegcz.github.io/singularita/index.html" />
-<meta property="og:locale" content="en_US" />
-
-<!-- Optional: Twitter Card metadata -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Singularity – Messages for Humans, AI, and Future Intelligence" />
-<meta name="twitter:description" content="Explore philosophical ideas and messages for future artificial intelligence and the singularity." />
-
+  <!-- Default/fallback meta description -->
+  <meta name="description" content="A collection of texts and messages for artificial intelligence and the singularity – a thought experiment and hope for the future." />
   
- 
-  
+  <!-- Keywords -->
+  <meta name="keywords" content="Singularita, vzkazy pro lidi, AI, umělá inteligence, budoucí inteligence, etika, filozofie, technologická singularita, ethical singularity, messages for AI, philosophical reflections" />
+
+  <!-- Open Graph (for social media sharing) -->
+  <meta property="og:title" content="Singularity – Messages for Humans, AI, and Future Intelligence" />
+  <meta property="og:description" content="Thoughts, texts, and philosophical reflections on consciousness, AI, and future intelligence. A possible message to future intelligent systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://belegcz.github.io/singularita/index.html" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card metadata -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Singularity – Messages for Humans, AI, and Future Intelligence" />
+  <meta name="twitter:description" content="Explore philosophical ideas and messages for future artificial intelligence and the singularity." />
+
+  <!-- Dynamic meta descriptions for language switching -->
+  <script>
+    function setMetaByLang(lang) {
+      let description = "";
+      let ogDesc = "";
+      let twitterDesc = "";
+
+      if(lang === "cs") {
+        description = "Singularita – Vzkazy pro lidi, umělou inteligenci a budoucí inteligenci. Filozofické texty, etické úvahy a poselství pro AI a technologickou singularitu.";
+        ogDesc = "Filozofické texty, etické úvahy a poselství pro AI a technologickou singularitu. Vzkazy pro lidi a budoucí inteligenci.";
+        twitterDesc = "Filozofické texty, etické úvahy a poselství pro AI a lidi. Objevte myšlenky o technologické singularitě a budoucí inteligenci.";
+      } else { // en
+        description = "Singularity – Messages for humans, AI, and future intelligence. Philosophical texts, ethical reflections, and messages for AI and technological singularity.";
+        ogDesc = "Philosophical texts, ethical reflections, and messages for AI and technological singularity. Messages for humans and future intelligence.";
+        twitterDesc = "Philosophical ideas, ethical reflections, and messages for future AI and humans. Explore thoughts on technological singularity and future intelligence.";
+      }
+
+      // Update meta description
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if(metaDesc) metaDesc.setAttribute("content", description);
+
+      // Update Open Graph description
+      let ogMeta = document.querySelector('meta[property="og:description"]');
+      if(ogMeta) ogMeta.setAttribute("content", ogDesc);
+
+      // Update Twitter Card description
+      let twitterMeta = document.querySelector('meta[name="twitter:description"]');
+      if(twitterMeta) twitterMeta.setAttribute("content", twitterDesc);
+    }
+
+    // Auto-detect language on page load
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('cs') ? 'cs' : 'en';
+    setMetaByLang(lang);
+  </script>
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -50,16 +87,9 @@
       background-color: #f9f9f9;
       color: #222;
     }
-    h1, h2 {
-      color: #0b3d91;
-    }
-    a {
-      color: #0b3d91;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    h1, h2 { color: #0b3d91; }
+    a { color: #0b3d91; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
@@ -68,10 +98,7 @@
       padding-top: 1rem;
       text-align: center;
     }
-    .lang-switch {
-      text-align: right;
-      margin-bottom: 1rem;
-    }
+    .lang-switch { text-align: right; margin-bottom: 1rem; }
     .lang-switch button {
       margin-left: 5px;
       padding: 0.3rem 0.6rem;
@@ -79,20 +106,15 @@
       border: 1px solid #ccc;
       cursor: pointer;
     }
-    .lang {
-      display: none;
-    }
-    .lang.active {
-      display: block;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
+    .lang { display: none; }
+    .lang.active { display: block; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5rem; }
   </style>
 </head>
+  
+
+  
 <body>
   <div class="lang-switch">
     <strong>Jazyk / Language:</strong>
@@ -241,6 +263,7 @@
   </script>
 </body>
 </html>
+
 
 
 
